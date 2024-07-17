@@ -1749,6 +1749,170 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "PlayerLabel",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Player:",
+      "font": "assets/ArchitectsDaughter.ttf",
+      "textAlignment": "center",
+      "characterSize": 42,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 45,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Player:",
+        "font": "assets/ArchitectsDaughter.ttf",
+        "textAlignment": "center",
+        "characterSize": 42,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "PlayerName",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "username",
+      "font": "assets/ArchitectsDaughter.ttf",
+      "textAlignment": "center",
+      "characterSize": 42,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 45,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "username",
+        "font": "assets/ArchitectsDaughter.ttf",
+        "textAlignment": "center",
+        "characterSize": 42,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "DeathsLabel",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Deaths:",
+      "font": "assets/ArchitectsDaughter.ttf",
+      "textAlignment": "center",
+      "characterSize": 42,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 45,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Deaths:",
+        "font": "assets/ArchitectsDaughter.ttf",
+        "textAlignment": "center",
+        "characterSize": 42,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "Deaths",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0",
+      "font": "assets/ArchitectsDaughter.ttf",
+      "textAlignment": "left",
+      "characterSize": 42,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": true,
+        "isShadowEnabled": true,
+        "italic": false,
+        "outlineColor": "0;0;0",
+        "outlineThickness": 2,
+        "shadowAngle": 45,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "0",
+        "font": "assets/ArchitectsDaughter.ttf",
+        "textAlignment": "left",
+        "characterSize": 42,
+        "color": "255;255;255"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1789,6 +1953,18 @@
       },
       {
         "objectName": "Fly"
+      },
+      {
+        "objectName": "PlayerLabel"
+      },
+      {
+        "objectName": "DeathsLabel"
+      },
+      {
+        "objectName": "PlayerName"
+      },
+      {
+        "objectName": "Deaths"
       }
     ]
   },
@@ -1812,9 +1988,30 @@
           "name": "VSaw"
         }
       ]
+    },
+    {
+      "name": "HUD",
+      "objects": [
+        {
+          "name": "PlayerLabel"
+        },
+        {
+          "name": "PlayerName"
+        },
+        {
+          "name": "DeathsLabel"
+        }
+      ]
     }
   ],
-  "variables": [],
+  "variables": [
+    {
+      "folded": true,
+      "name": "DEATHS",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "layouts": [
     {
       "b": 209,
@@ -2188,6 +2385,16 @@
               "parameters": [
                 "",
                 "\"DontQuit\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "DEATHS",
+                "=",
+                "0"
               ]
             }
           ]
@@ -2668,6 +2875,70 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "PlayerLabel",
+          "persistentUuid": "9285c7fc-2ea1-4eb7-921b-1f91fd8fb9ea",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "PlayerName",
+          "persistentUuid": "f7a81e88-bfa2-4ee7-b7e7-ada714aba7ae",
+          "width": 0,
+          "x": 192,
+          "y": 0,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "DeathsLabel",
+          "persistentUuid": "be132449-2042-480e-94d4-dd004fab3eb1",
+          "width": 0,
+          "x": 0,
+          "y": 96,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Deaths",
+          "persistentUuid": "f5551034-cb0e-485b-8aba-3a9b3d7baf01",
+          "width": 0,
+          "x": 192,
+          "y": 96,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -2742,7 +3013,7 @@
           "isLightingLayer": false,
           "isLocked": false,
           "name": "",
-          "renderingType": "",
+          "renderingType": "2d",
           "visibility": true,
           "cameras": [
             {
@@ -2756,23 +3027,24 @@
               "width": 0
             }
           ],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Light",
-              "doubleParameters": {
-                "elevation": 45,
-                "intensity": 1,
-                "rotation": 0
-              },
-              "stringParameters": {
-                "groundColor": "64;64;64",
-                "skyColor": "255;255;255",
-                "top": "Y-"
-              },
-              "booleanParameters": {}
-            }
-          ]
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "HUD",
+          "renderingType": "2d",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
         }
       ],
       "behaviorsSharedData": [
@@ -2811,6 +3083,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     },
@@ -2834,7 +3110,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.0269425874981077,
+        "zoomFactor": 0.5843784410740935,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3089,6 +3365,12 @@
           "initialVariables": [
             {
               "folded": true,
+              "name": "Stretch",
+              "type": "number",
+              "value": 0.8
+            },
+            {
+              "folded": true,
               "name": "Speed",
               "type": "number",
               "value": 1
@@ -3157,6 +3439,70 @@
           "x": -32,
           "y": 608,
           "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "PlayerLabel",
+          "persistentUuid": "4aba04cd-a3c4-4f2b-be8c-db5a6d67ac6b",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "DeathsLabel",
+          "persistentUuid": "333a40a6-dd18-40c1-bb3b-ae5dedeb08e7",
+          "width": 0,
+          "x": 0,
+          "y": 96,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "PlayerName",
+          "persistentUuid": "d11aac3b-d28b-498b-9dc3-e51e0674b04d",
+          "width": 0,
+          "x": 192,
+          "y": 0,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "Deaths",
+          "persistentUuid": "e903e2d7-74ba-4c08-b2d9-06a39a4a15ca",
+          "width": 0,
+          "x": 192,
+          "y": 96,
+          "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3234,7 +3580,7 @@
           "isLightingLayer": false,
           "isLocked": false,
           "name": "",
-          "renderingType": "",
+          "renderingType": "2d",
           "visibility": true,
           "cameras": [
             {
@@ -3248,23 +3594,24 @@
               "width": 0
             }
           ],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Light",
-              "doubleParameters": {
-                "elevation": 45,
-                "intensity": 1,
-                "rotation": 0
-              },
-              "stringParameters": {
-                "groundColor": "64;64;64",
-                "skyColor": "255;255;255",
-                "top": "Y-"
-              },
-              "booleanParameters": {}
-            }
-          ]
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "HUD",
+          "renderingType": "2d",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
         }
       ],
       "behaviorsSharedData": [
@@ -3816,6 +4163,70 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "PlayerLabel",
+          "persistentUuid": "6c864ac3-ba13-4db8-a984-bd97b6c3e385",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 1025,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "DeathsLabel",
+          "persistentUuid": "30a59f62-62ec-41f3-9de0-1f1ebd108805",
+          "width": 0,
+          "x": 0,
+          "y": 96,
+          "zOrder": 1026,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "PlayerName",
+          "persistentUuid": "3135771e-aa21-419a-bc53-17398248a6b1",
+          "width": 0,
+          "x": 192,
+          "y": 0,
+          "zOrder": 1027,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "Deaths",
+          "persistentUuid": "75bfdc3d-da7b-43af-8638-0b65b14b8ecd",
+          "width": 0,
+          "x": 192,
+          "y": 96,
+          "zOrder": 1028,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -3914,7 +4325,7 @@
           "isLightingLayer": false,
           "isLocked": false,
           "name": "",
-          "renderingType": "",
+          "renderingType": "2d",
           "visibility": true,
           "cameras": [
             {
@@ -3928,23 +4339,24 @@
               "width": 0
             }
           ],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Light",
-              "doubleParameters": {
-                "elevation": 45,
-                "intensity": 1,
-                "rotation": 0
-              },
-              "stringParameters": {
-                "groundColor": "64;64;64",
-                "skyColor": "255;255;255",
-                "top": "Y-"
-              },
-              "booleanParameters": {}
-            }
-          ]
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "HUD",
+          "renderingType": "2d",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
         }
       ],
       "behaviorsSharedData": [
@@ -4499,6 +4911,70 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "PlayerLabel",
+          "persistentUuid": "137d3b52-293f-471f-9be8-494e247203c8",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "DeathsLabel",
+          "persistentUuid": "53c116a6-de57-400d-941e-f5b59761accd",
+          "width": 0,
+          "x": 0,
+          "y": 96,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "PlayerName",
+          "persistentUuid": "bfca14d7-e6db-4e62-8e97-754307bde7f4",
+          "width": 0,
+          "x": 192,
+          "y": 0,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "Deaths",
+          "persistentUuid": "5325b109-49af-451a-b3d6-2ebff8907120",
+          "width": 0,
+          "x": 192,
+          "y": 96,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -4598,7 +5074,7 @@
           "isLightingLayer": false,
           "isLocked": false,
           "name": "",
-          "renderingType": "",
+          "renderingType": "2d",
           "visibility": true,
           "cameras": [
             {
@@ -4612,23 +5088,24 @@
               "width": 0
             }
           ],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Light",
-              "doubleParameters": {
-                "elevation": 45,
-                "intensity": 1,
-                "rotation": 0
-              },
-              "stringParameters": {
-                "groundColor": "64;64;64",
-                "skyColor": "255;255;255",
-                "top": "Y-"
-              },
-              "booleanParameters": {}
-            }
-          ]
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "HUD",
+          "renderingType": "2d",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
         }
       ],
       "behaviorsSharedData": [
@@ -4690,7 +5167,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.7619362677197606,
+        "zoomFactor": 0.5843784410740935,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -5213,6 +5690,70 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "PlayerLabel",
+          "persistentUuid": "49a725e0-0929-4f7e-84c6-d5eb6bccdf3f",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "DeathsLabel",
+          "persistentUuid": "a6c12b74-1e12-4b9f-8af3-64854d86974a",
+          "width": 0,
+          "x": 0,
+          "y": 96,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "PlayerName",
+          "persistentUuid": "c1f67247-241e-4f07-a215-15992f9ab1dc",
+          "width": 0,
+          "x": 192,
+          "y": 0,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "HUD",
+          "name": "Deaths",
+          "persistentUuid": "bfc12a76-f170-46e2-83d2-d3f7f3342667",
+          "width": 0,
+          "x": 192,
+          "y": 96,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -5264,6 +5805,35 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Puzzie",
+                "Target",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Start Screen\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
           "type": "BuiltinCommonInstructions::Link",
           "include": {
             "includeConfig": 0
@@ -5284,7 +5854,7 @@
           "isLightingLayer": false,
           "isLocked": false,
           "name": "",
-          "renderingType": "",
+          "renderingType": "2d",
           "visibility": true,
           "cameras": [
             {
@@ -5298,23 +5868,24 @@
               "width": 0
             }
           ],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Light",
-              "doubleParameters": {
-                "elevation": 45,
-                "intensity": 1,
-                "rotation": 0
-              },
-              "stringParameters": {
-                "groundColor": "64;64;64",
-                "skyColor": "255;255;255",
-                "top": "Y-"
-              },
-              "booleanParameters": {}
-            }
-          ]
+          "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "HUD",
+          "renderingType": "2d",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
         }
       ],
       "behaviorsSharedData": [
@@ -5742,6 +6313,16 @@
                 "Puzzie",
                 "\"Restart\""
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "DEATHS",
+                "+",
+                "1"
+              ]
             }
           ]
         },
@@ -5997,6 +6578,28 @@
                     "=",
                     "0"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "HUD",
+                    "Opacity",
+                    "=",
+                    "128"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "PlayerName",
+                    "Text",
+                    "=",
+                    "PlayerAuthentication::Username()"
+                  ]
                 }
               ]
             },
@@ -6027,6 +6630,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6097,6 +6701,23 @@
                         ""
                       ]
                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Deaths",
+                    "Text",
+                    "=",
+                    "ToString(DEATHS)"
                   ]
                 }
               ]
