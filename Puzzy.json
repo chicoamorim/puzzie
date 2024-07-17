@@ -474,7 +474,14 @@
       "name": "Puzzie",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "IsInvincible",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -1131,7 +1138,7 @@
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.08,
+              "timeBetweenFrames": 0.75,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
@@ -2000,6 +2007,9 @@
         },
         {
           "name": "DeathsLabel"
+        },
+        {
+          "name": "Deaths"
         }
       ]
     }
@@ -2033,7 +2043,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.6455105703311509,
+        "zoomFactor": 0.5653158055126334,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -2068,22 +2078,6 @@
           "x": 496,
           "y": 64,
           "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Puzzie",
-          "persistentUuid": "b2b8a3b4-0c39-424b-95cd-b8b3f6eb8305",
-          "width": 0,
-          "x": 544,
-          "y": 352,
-          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2129,9 +2123,25 @@
           "name": "LastTry",
           "persistentUuid": "3a5239d0-382c-4bbd-a83e-eeb169081e24",
           "width": 0,
-          "x": 416,
+          "x": 268,
           "y": 608,
           "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "WavingPuzzie",
+          "persistentUuid": "c9983ec4-eaa2-431d-a088-f8f3b70b9d06",
+          "width": 0,
+          "x": 576,
+          "y": 352,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2193,7 +2203,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Puzzie",
+          "name": "WavingPuzzie",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -2381,7 +2391,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Last attempt:",
+          "string": "Last try:",
           "font": "assets/ArchitectsDaughter.ttf",
           "textAlignment": "center",
           "characterSize": 48,
@@ -2404,7 +2414,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Last attempt:",
+            "text": "Last try:",
             "font": "assets/ArchitectsDaughter.ttf",
             "textAlignment": "center",
             "characterSize": 48,
@@ -2463,7 +2473,7 @@
             "objectName": "Title"
           },
           {
-            "objectName": "Puzzie"
+            "objectName": "WavingPuzzie"
           },
           {
             "objectName": "Start"
@@ -2817,22 +2827,6 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Puzzie",
-          "persistentUuid": "bfdfa4a0-38d1-46ed-ba7c-4d83a8212c0c",
-          "width": 0,
-          "x": 0,
-          "y": 576,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "depth": 1,
           "height": 1216,
@@ -3161,6 +3155,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Puzzie",
+          "persistentUuid": "bf2d6ac6-9940-4835-aff5-f00aa49e6db1",
+          "width": 0,
+          "x": 0,
+          "y": 576,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -3361,7 +3371,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Puzzie",
+          "name": "WavingPuzzie",
           "persistentUuid": "d5cac103-1745-4764-aabe-698a148e9756",
           "width": 0,
           "x": -32,
@@ -3728,6 +3738,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Puzzie",
+          "persistentUuid": "885ecb55-300e-49fb-b540-f2b5eb67bebc",
+          "width": 0,
+          "x": -32,
+          "y": 608,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -3941,7 +3967,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Puzzie",
+          "name": "WavingPuzzie",
           "persistentUuid": "46298067-677f-49f8-94fb-dda203a70140",
           "width": 0,
           "x": 1184,
@@ -4449,6 +4475,27 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Puzzie",
+          "persistentUuid": "c31d4100-0f7c-4ce8-b055-c26bae6e3c93",
+          "width": 0,
+          "x": 1184,
+          "y": 608,
+          "zOrder": 1029,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -4910,7 +4957,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Puzzie",
+          "name": "WavingPuzzie",
           "persistentUuid": "cd3e7fdf-f222-49fc-a35f-17fd26e25e46",
           "width": 0,
           "x": 1216,
@@ -5197,6 +5244,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Puzzie",
+          "persistentUuid": "b457fc73-bc2c-4c5a-b471-87a52d8ed689",
+          "width": 0,
+          "x": 1216,
+          "y": 0,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -5452,7 +5515,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Puzzie",
+          "name": "WavingPuzzie",
           "persistentUuid": "1f6d9ea8-82b7-4bf6-9302-3b5d62899006",
           "width": 0,
           "x": 0,
@@ -5976,6 +6039,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Puzzie",
+          "persistentUuid": "61182ed3-2e72-414a-9ec0-94ad7f317f5f",
+          "width": 0,
+          "x": 0,
+          "y": -96,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -6215,6 +6294,17 @@
               "parameters": [
                 "Puzzie",
                 "\"Invincible\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Puzzie",
+                "IsInvincible",
+                "False",
+                ""
               ]
             }
           ]
@@ -6456,13 +6546,13 @@
             },
             {
               "type": {
-                "value": "CompareObjectTimer"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
                 "Puzzie",
-                "\"Invincible\"",
-                ">=",
-                "2"
+                "IsInvincible",
+                "=",
+                ""
               ]
             },
             {
@@ -6482,6 +6572,17 @@
                 "Animation",
                 "=",
                 "\"Hurt\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Puzzie",
+                "IsInvincible",
+                "True",
+                ""
               ]
             },
             {
@@ -6529,15 +6630,6 @@
             },
             {
               "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Puzzie",
-                "\"Restart\""
-              ]
-            },
-            {
-              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
@@ -6553,13 +6645,13 @@
           "conditions": [
             {
               "type": {
-                "value": "CompareObjectTimer"
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
               },
               "parameters": [
                 "Puzzie",
-                "\"Restart\"",
-                ">",
-                "0"
+                "Animation",
+                "=",
+                "\"Hurt\""
               ]
             }
           ],
@@ -6581,26 +6673,26 @@
           "conditions": [
             {
               "type": {
-                "value": "CompareObjectTimer"
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
               },
               "parameters": [
                 "Puzzie",
-                "\"Restart\"",
-                ">=",
-                "0.75"
+                "Animation",
+                "=",
+                "\"Hurt\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+              },
+              "parameters": [
+                "Puzzie",
+                "Animation"
               ]
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "RemoveObjectTimer"
-              },
-              "parameters": [
-                "Puzzie",
-                "\"Restart\""
-              ]
-            },
             {
               "type": {
                 "value": "MettreXY"
@@ -6670,13 +6762,25 @@
           "conditions": [
             {
               "type": {
-                "value": "CompareObjectTimer"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
                 "Puzzie",
-                "\"Invincible\"",
-                "<=",
-                "2"
+                "IsInvincible",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Puzzie",
+                "Animation",
+                "=",
+                "\"Hurt\""
               ]
             }
           ],
@@ -6703,7 +6807,7 @@
                   "parameters": [
                     "TimerValue",
                     "=",
-                    "1"
+                    "0"
                   ]
                 }
               ],
@@ -6729,7 +6833,7 @@
                   "parameters": [
                     "TimerValue",
                     "=",
-                    "0"
+                    "1"
                   ]
                 }
               ],
@@ -6740,6 +6844,53 @@
                   },
                   "parameters": [
                     "Puzzie"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Puzzie",
+                    "\"Invincible\"",
+                    ">",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Puzzie",
+                    "IsInvincible",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "RemoveObjectTimer"
+                  },
+                  "parameters": [
+                    "Puzzie",
+                    "\"Invincible\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Puzzie",
+                    ""
                   ]
                 }
               ]
@@ -6852,7 +7003,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
