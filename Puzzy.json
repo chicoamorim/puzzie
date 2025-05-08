@@ -1,9 +1,9 @@
 {
   "firstLayout": "Start Screen",
   "gdVersion": {
-    "build": 99,
-    "major": 4,
-    "minor": 0,
+    "build": 221,
+    "major": 5,
+    "minor": 5,
     "revision": 0
   },
   "properties": {
@@ -69,7 +69,6 @@
   "resources": {
     "resources": [
       {
-        "alwaysLoaded": false,
         "file": "assets/tile_brick.png",
         "kind": "image",
         "metadata": "{\"localFilePath\":\"assets/tile_brick.png\",\"extension\":\".png\",\"pskl\":{}}",
@@ -78,7 +77,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_tile_brick.png2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
@@ -94,7 +92,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/platformChar_happy.png",
         "kind": "image",
         "metadata": "",
@@ -103,7 +100,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_platformChar_happy.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -112,7 +108,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_platformChar_happy2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -121,7 +116,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_platformChar_happy3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -130,7 +124,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_platformChar_happy4.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -139,7 +132,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/White Decorated Button_Hovered.png",
         "kind": "image",
         "metadata": "",
@@ -152,7 +144,6 @@
         }
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/White Decorated Button_Idle.png",
         "kind": "image",
         "metadata": "",
@@ -165,7 +156,6 @@
         }
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/White Decorated Button_Pressed.png",
         "kind": "image",
         "metadata": "",
@@ -189,7 +179,6 @@
         }
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/platformChar_climb1.png",
         "kind": "image",
         "metadata": "",
@@ -198,7 +187,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/platformChar_climb2.png",
         "kind": "image",
         "metadata": "",
@@ -207,7 +195,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/platformChar_duck.png",
         "kind": "image",
         "metadata": "",
@@ -216,7 +203,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/platformChar_jump.png",
         "kind": "image",
         "metadata": "",
@@ -225,7 +211,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/platformChar_walk1.png",
         "kind": "image",
         "metadata": "",
@@ -234,7 +219,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/platformChar_walk2.png",
         "kind": "image",
         "metadata": "",
@@ -243,7 +227,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/platformChar_idle.png",
         "kind": "image",
         "metadata": "",
@@ -252,7 +235,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_platformChar_happy.png",
         "kind": "image",
         "metadata": "",
@@ -261,7 +243,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_platformChar_happy2.png",
         "kind": "image",
         "metadata": "",
@@ -270,7 +251,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_platformChar_happy3.png",
         "kind": "image",
         "metadata": "",
@@ -279,7 +259,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_platformChar_happy4.png",
         "kind": "image",
         "metadata": "",
@@ -315,7 +294,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/tile_spikes.png",
         "kind": "image",
         "metadata": "",
@@ -324,7 +302,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_spike-collision.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -333,7 +310,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_spike-collision2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -342,7 +318,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_tile_spikes.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_tile_spikes.png\"}",
@@ -361,7 +336,6 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/tile_ladder.png",
         "kind": "image",
         "metadata": "",
@@ -370,7 +344,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/saw.png",
         "kind": "image",
         "metadata": "",
@@ -379,7 +352,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/Right arrow round button.png",
         "kind": "image",
         "metadata": "",
@@ -392,7 +364,6 @@
         }
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_spike-collision.png",
         "kind": "image",
         "metadata": "",
@@ -401,7 +372,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/tile_0383.png",
         "kind": "image",
         "metadata": "",
@@ -410,7 +380,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/tile_0384.png",
         "kind": "image",
         "metadata": "",
@@ -419,7 +388,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_tile_0383.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -428,7 +396,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_tile_0384.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -437,7 +404,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/assets_start-pos.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -1804,6 +1770,7 @@
         "text": "Player:",
         "font": "assets/ArchitectsDaughter.ttf",
         "textAlignment": "center",
+        "verticalTextAlignment": "top",
         "characterSize": 42,
         "color": "255;255;255"
       }
@@ -1845,6 +1812,7 @@
         "text": "username",
         "font": "assets/ArchitectsDaughter.ttf",
         "textAlignment": "center",
+        "verticalTextAlignment": "top",
         "characterSize": 42,
         "color": "255;255;255"
       }
@@ -1886,6 +1854,7 @@
         "text": "Deaths:",
         "font": "assets/ArchitectsDaughter.ttf",
         "textAlignment": "center",
+        "verticalTextAlignment": "top",
         "characterSize": 42,
         "color": "255;255;255"
       }
@@ -1927,6 +1896,7 @@
         "text": "0",
         "font": "assets/ArchitectsDaughter.ttf",
         "textAlignment": "left",
+        "verticalTextAlignment": "top",
         "characterSize": 42,
         "color": "255;255;255"
       }
@@ -2223,6 +2193,7 @@
             "text": "Puzzie",
             "font": "assets/akronim.ttf",
             "textAlignment": "center",
+            "verticalTextAlignment": "top",
             "characterSize": 128,
             "color": "0;0;0"
           }
@@ -2391,6 +2362,7 @@
                 "text": "Start",
                 "font": "ArchitectsDaughter.ttf",
                 "textAlignment": "center",
+                "verticalTextAlignment": "top",
                 "characterSize": 21,
                 "color": "0;0;0"
               }
@@ -2444,6 +2416,7 @@
             "text": "Last try:",
             "font": "assets/ArchitectsDaughter.ttf",
             "textAlignment": "center",
+            "verticalTextAlignment": "top",
             "characterSize": 48,
             "color": "0;0;0"
           }
@@ -2485,6 +2458,7 @@
             "text": "0 deaths",
             "font": "assets/ArchitectsDaughter.ttf",
             "textAlignment": "left",
+            "verticalTextAlignment": "top",
             "characterSize": 48,
             "color": "255;255;255"
           }
@@ -2556,6 +2530,7 @@
                 "text": "Play Music",
                 "font": "ArchitectsDaughter.ttf",
                 "textAlignment": "center",
+                "verticalTextAlignment": "top",
                 "characterSize": 8,
                 "color": "0;0;0"
               }
@@ -4083,6 +4058,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     },
@@ -4849,6 +4828,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     },
@@ -5614,6 +5597,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     },
@@ -6410,6 +6397,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     }
@@ -6417,7 +6408,6 @@
   "externalEvents": [
     {
       "associatedLayout": "Level 1",
-      "lastChangeTimeStamp": 0,
       "name": "Player",
       "events": [
         {
@@ -7094,7 +7084,6 @@
     },
     {
       "associatedLayout": "Level 1",
-      "lastChangeTimeStamp": 0,
       "name": "Assets",
       "events": [
         {
@@ -7436,7 +7425,6 @@
     },
     {
       "associatedLayout": "Level 1",
-      "lastChangeTimeStamp": 0,
       "name": "Level Events",
       "events": [
         {
@@ -10057,9 +10045,16 @@
       ],
       "eventsBasedObjects": [
         {
+          "areaMaxX": 64,
+          "areaMaxY": 64,
+          "areaMaxZ": 64,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
           "defaultName": "Button",
           "description": "A button that can be customized.",
           "fullName": "Button (panel sprite)",
+          "isUsingLegacyInstancesRenderer": true,
           "name": "PanelSpriteButton",
           "eventsFunctions": [
             {
@@ -11450,6 +11445,7 @@
                 "text": "Text",
                 "font": "",
                 "textAlignment": "",
+                "verticalTextAlignment": "top",
                 "characterSize": 20,
                 "color": "0;0;0"
               }
@@ -11537,7 +11533,39 @@
                 "objectName": "Pressed"
               }
             ]
-          }
+          },
+          "objectsGroups": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": []
         }
       ]
     }
